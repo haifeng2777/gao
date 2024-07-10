@@ -11,12 +11,12 @@
 "sites":[
 {"key":"lf_js_search","name":"搜索","type":3,"searchable":0,"changeable":1,"quickSearch":0,"filterable":0,"api":"./lib/lf_search3_min.js","ext":"18+"},
 {"key":"lf_js_p2p","name":"磁力","type":3,"searchable":1,"changeable":1,"quickSearch":1,"filterable":1,"api":"./lib/lf_p2p2_min.js","ext":"18+","timeout":60},
-{"key":"lf_js_lf_live","name":"直播","type":3,"api":"./lib/lf_live_min.js","style":{ "type":"oval"},"searchable":1,"changeable":0,"quickSearch":1,"filterable":1,"ext":"./js/lf_live1.txt"},
-{"key":"PikPakShare","name":"PikPak","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1, "changeable":0, "filterable":0, "timeout":60, "ext":"http://127.0.0.1:9978/file/TV/token.json$$$./json/pikpakclass.a.json$$$./json/pikpakclass.a.json.db.gz"},
-{"key":"PikPakShare1","name":"PikPak1","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1, "changeable":0, "filterable":0, "timeout":60, "ext":"http://127.0.0.1:9978/file/TV/token.json$$$./json/pikpakclass.a1.json$$$./json/pikpakclass.a1.json.db.gz"},
+{"key":"lf_js_lf_live","name":"直播","type":3,"api":"./lib/lf_live_min.js","style":{"type":"oval"},"searchable":1,"changeable":0,"quickSearch":1,"filterable":1,"ext":"./js/lf_live1.txt"},
+{"key":"PikPakShare","name":"PikPak","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1,"changeable":0,"filterable":0,"timeout":60,"ext":"http://127.0.0.1:9978/file/TV/token.json$$$./json/pikpakclass.a.json$$$./json/pikpakclass.a.json.db.gz"},
+{"key":"PikPakShare1","name":"PikPak1","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1,"changeable":0,"filterable":0,"timeout":60,"ext":"http://127.0.0.1:9978/file/TV/token.json$$$./json/pikpakclass.a1.json$$$./json/pikpakclass.a1.json.db.gz"},
 {"key":"配置中心","name":"配置中心","type":3,"api":"csp_Config","searchable":0,"changeable":0,"style":{"type":"rect","ratio":1},"ext":"http://127.0.0.1:9978/file/TV/token.json"},
-{"key":"Cable","name":"CableAV","type":3,"api":"csp_Cable","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60},
-{  "key": "AList",  "name": "AList",  "type": 3,  "api": "csp_AList",  "searchable": 1,  "changeable": 0,  "ext": {"vodPic": "https://x.imgs.ovh/x/2023/09/05/64f680bb030b4.png","drives": [{"name": "网盘1","server": "https://alist-caimoui.cloud.okteto.net/私房菜/"}]}},
+{"key":"Cable","name":"CableAV","type":3,"api":"csp_Cable","searchable":1,"quickSearch":1,"changeable":1,"filterable":0,"timeout":60},
+{"key":"AList","name":"AList","type":3,"api":"csp_AList","searchable":1,"changeable":0,"ext":{"vodPic":"https://x.imgs.ovh/x/2023/09/05/64f680bb030b4.png","drives":[{"name":"网盘1","server":"https://alist-caimoui.cloud.okteto.net/私房菜/"}]}},
 {"key":"csp_JavBus","name":"JavBus","type":3,"api":"csp_JavBus","searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.77},"timeout":60},
 {"key":"csp_JavDb","name":"JavDb","type":3,"api":"csp_JavDb","searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.77},"timeout":60},
 {"key":"nivod18","name":"泥巴貓","type":3,"api":"./cat/js/nivod_op.js","ext":"做爱"},
@@ -27,40 +27,58 @@
 {"key":"非凡","name":"非凡","type":0,"api":"http://cj.ffzyapi.com/api.php/provide/vod/at/xml/","searchable":1,"changeable":1,"categories":["伦理片"]},
 {"key":"玩偶","name":"玩偶","type":3,"api":"csp_Doll","searchable":1,"recordable":0,"style":{"type":"rect","ratio":1.309}},
 
-  
-  {
-        "key": "KK写真资源",
-        "name": "KK写真资源",
-        "type": 1,
-        "api": "https://kkzy.me/api.php/provide/vod/",
-        "searchable": 1,
-        "quickSearch": 1
-    }, {
-        "key": "番号资源",
-        "name": "番号资源",
-        "type": 1,
-        "api": "http://fhapi9.com/api.php/provide/vod/",
-        "searchable": 1,
-        "quickSearch": 1
-    }, {
-        "key": "甜蜜资源",
-        "name": "甜蜜资源",
-        "type": 1,
-        "api": "https://timizy10.cc/api.php/provide/vod/",
-        "searchable": 1,
-        "quickSearch": 1
-    }, {
-        "key": "奶香香资源",
-        "name": "奶香香资源",
-        "type": 1,
-        "api": "https://naixxzy.com/api.php/provide/vod/",
-        "searchable": 1,
-        "quickSearch": 1
-    }, {
-        "key": "Taohuazu",
-        "name": "桃花族🔞",
-        "type": 3,
-        "api": "csp_Taohuazu",
+    {
+            "key": "暑假快练!",
+            "name": "暑假快练〓采集",
+            "type": 1,
+            "api": " http://aanhsck.cc/api.php/provide/vod/",
+            //"playUrl": "https://www.yemu.xyz/?url=",
+            "playerType": 1,
+            "searchable": 1,
+            "changeable": 1,
+            "categories": [
+            "日本有码",
+            "无码中文字幕",
+            "有码中文字幕",
+            "日本无码",
+            "国产视频",
+            "欧美高清",
+            "动漫剧情"          
+            ]
+        },
+{
+"key":"KK写真资源",
+"name":"KK写真资源",
+"type":1,
+"api":"https://kkzy.me/api.php/provide/vod/",
+"searchable":1,
+"quickSearch":1
+},{
+"key":"番号资源",
+"name":"番号资源",
+"type":1,
+"api":"http://fhapi9.com/api.php/provide/vod/",
+"searchable":1,
+"quickSearch":1
+},{
+"key":"甜蜜资源",
+"name":"甜蜜资源",
+"type":1,
+"api":"https://timizy10.cc/api.php/provide/vod/",
+"searchable":1,
+"quickSearch":1
+},{
+"key":"奶香香资源",
+"name":"奶香香资源",
+"type":1,
+"api":"https://naixxzy.com/api.php/provide/vod/",
+"searchable":1,
+"quickSearch":1
+},{
+"key":"Taohuazu",
+"name":"桃花族🔞",
+"type":3,
+"api":"csp_Taohuazu",
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1,
