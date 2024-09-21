@@ -1,7 +1,7 @@
-﻿var rule = {
+var rule = {
   title: '天天综合[密]',//发布页:'https://666sav.com','https://771267398.550xx.vip',
-  //hostJs: 'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,".login-txt&&a:eq(0)&&href");print(src);HOST=src',
-  host: 'https://29kknn.vip',
+  hostJs: 'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,".login-txt&&a:eq(1)&&href");print(src);HOST=src',
+  host: 'https://666sav.com',
   url: '/fyclass-fypage.html[/fyclass]',
   searchUrl: '/sos**/page/fypage.html',
   searchable: 2,
